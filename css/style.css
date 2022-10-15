@@ -1,0 +1,56 @@
+/* @font-face {
+    font-family: bolt-700;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: regular-400;
+    src: url(../fonts/OpenSans-Regular.ttf);
+} */
+
+body{
+    font-family: 'Open Sans'", "cans-serif";
+}
+.header{
+    background-color: gray;
+}
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+/* ---------header------------- */
+.header-link,
+.header-tel{
+font-weight: 600;
+font-size: 12px;
+line-height: 1,33;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+}
+/* .header-tel{
+font-weight: 600;
+font-size: 12px;
+line-height: 1,33;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+} */
+.header-link:hover{
+    color: #FF6C00;
+}
+.header-link:focus{
+    color: #FF6C00;
+}
+.header-btn{
+font-family:inherit;
+font-weight: 600;
+font-size: 12px;
+line-height: 1,33;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+/* -------hero----------- */
+.hero-link{
+    
+}
