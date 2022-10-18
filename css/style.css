@@ -7,21 +7,48 @@
     src: url(../fonts/OpenSans-Regular.ttf);
 } */
 
+
+:root{
+--main-title-color:#ffffff;
+--main-btn-color: #ffffff;
+--second-title-color:#303030;
+--second-btn-color:#303030;
+--accent-color:#FF6C00;
+--typical-lh:1,36;
+--main-font:'Raleway', sans-serif;
+}
+
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+}
+
 body {
-  font-family: "Open Sans" ", " cans-serif
-    ";
+font-family: "Open Sans", sans-serif;
 }
+
 .header{
-    background-color: gray;
+background-color: gray;
 }
+
 .hero{
-    background-color: gray;
+background-color: gray;
 }
+
 .list{
-    list-style: none;
+list-style: none;
 }
+
 .link{
-    text-decoration: none;
+text-decoration: none;
 }
 
 /* ---------HEADER------------- */
@@ -53,12 +80,13 @@ line-height: 1,33;
 letter-spacing: 0.09em;
 text-transform: uppercase;
 color: #FFFFFF;
+cursor: pointer;
 }
 
 /* ---------------HERO----------- */
 
 .hero-link{
-    font-weight: 600;
+font-weight: 600;
 font-size: 11px;
 line-height: 1,36;
 letter-spacing: 0.2em;
@@ -67,27 +95,313 @@ color: #303030;
 
 .hero-link:hover,
 .hero-link:focus{
-    color: #FF6C00;
+color: #FF6C00;
 }
+
 .hero-top-text {
-    font-weight: 600;
+font-weight: 600;
 font-size: 11px;
 line-height: 1,36;
 text-transform: uppercase;
 color: rgba(157, 164, 189, 0.6);
 }
+
 .hero-title {
-font-family: 'Raleway' "
-    cans-serif "";
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 1, 18;
-  letter-spacing: 0.05em;
-  color: #ffffff;
+font-family: 'Raleway' sans-serif;
+font-weight: 700;
+font-size: 72px;
+line-height: 1, 18;
+letter-spacing: 0.05em;
+color: #ffffff;
 }
 .hero-bottom-text {
-  font-size: 18px;
-  line-height: 1, 66;
-  letter-spacing: 0.02em;
-  color: #9da4bd;
+font-size: 18px;
+line-height: 1, 66;
+letter-spacing: 0.02em;
+color: #9da4bd;
+}
+/* --------------------ABOUT------------------------------*/
+
+.about-list {
+}
+.about-item {
+}
+.about-top-text {
+font-weight: 600;
+font-size: 11px;
+line-height: 1,36;
+text-transform: uppercase;
+color: #303030;
+}
+
+.about-tetle {
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1,17;
+letter-spacing: 0.05em;
+color: #303030;
+}
+
+.about-bottom-text {
+font-size: 18px;
+line-height: 1,67;
+letter-spacing: 0.02em;
+color: #555555;
+}
+
+.about-text {
+font-size: 14px;
+line-height: 1,86;
+letter-spacing: 0.02em;
+color: #555555;
+}
+
+.about-btn {
+font-family: inherit;
+font-weight: 600;
+font-size: 12px;
+line-height: 1,33;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: #303030;
+cursor: pointer;
+}
+
+/* --------------------PRICES----------------------------*/
+
+.prices {
+    background-color:#303030;
+}
+
+.prices-top-text {
+font-weight: 600;
+font-size: 11px;
+line-height: 1,36;
+text-transform: uppercase;
+color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1,17;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.prices-list {
+}
+.list {
+}
+.prices-item {
+}
+
+.prices-item-text {
+font-size: 18px;
+line-height: 1,67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+
+.prices-btn {
+font-family: inherit;
+font-weight: 600;
+font-size: 12px;
+line-height: 1,33;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: #FFFFFF;
+cursor: pointer;
+}
+
+ /* --------------------BENEFITS----------------------------*/ 
+
+.benefits {
+}
+.benefits-list {
+}
+
+.benefits-item span {
+font-weight: 700;
+font-size: 42px;
+line-height:1,36;
+text-align: center;
+letter-spacing: 0.05em;
+color: #303030;
+}
+
+.benefits-item-text {
+font-weight: 600;
+font-size: 11px;
+line-height:var(--typical-lh);
+text-align: center;
+color: #303030;
+}
+
+.benefits-top-text {
+font-weight: 600;
+font-size: 11px;
+line-height:var(--typical-lh);
+text-transform: uppercase;
+color: #303030;
+}
+
+.benefits-title {
+font-family: 'Raleway',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height:1,17;
+letter-spacing: 0.05em;
+color:var(--second-title-color);
+}
+
+.benefits-bottom-text {
+font-weight: 400;
+font-size: 18px;
+line-height: 1,67;
+letter-spacing: 0.02em;
+color: #555555;
+}
+
+/* --------------------BARBERS----------------------------*/ 
+
+
+.barbers {
+}
+
+.barbers-top-text {
+font-weight: 600;
+font-size: 11px;
+line-height:var(--typical-lh);
+text-transform: uppercase;
+color: #303030;
+}
+
+.barbers-title {
+font-family: 'Raleway',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1,17;
+letter-spacing: 0.05em;
+color:var(--second-title-color);
+}
+
+.barbers-list {
+}
+
+.barbers-item {
+}
+
+.barbers-item-title {
+font-weight: 400;
+font-size: 18px;
+line-height: 1,39;
+text-align: center;
+letter-spacing: 0.02em;
+color:#303030;
+}
+
+.barbers-item-text {
+font-size: 14px;
+line-height: 1,36;
+text-align: center;
+letter-spacing: 0.02em;
+color:#303030;
+}
+
+.barbers-soc-list {
+}
+.barbers-soc-item {
+}
+.barbers-soc-link {
+}
+
+/* --------------------GALLERY----------------------------*/ 
+
+.allery-top-text{
+font-weight: 600;
+font-size: 11px;
+line-height: 1,36;
+text-transform: uppercase;
+color: #303030;
+}
+/* --------------------ONLINE----------------------------*/ 
+
+.online{
+background-color: #303030;
+}
+.online-title{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1,17;
+letter-spacing: 0.05em;
+color:var(--main-title-color);
+}
+/* --------------------CONTACTS----------------------------*/ 
+
+.contacts{
+background-color: #303030;
+}
+.contacts-title{
+color: var(--main-title-color);
+}
+.contacts-address-link{
+font-weight: 700;
+font-size: 18px;
+line-height:1,67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+.contacts-item {
+color: #9DA4BD;
+
+}
+.contacts-link {
+font-size: 18px;
+line-height: 1,67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+.contacts-subtitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1,36;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.contacts-schedule {
+font-size: 18px;
+line-height: 1,67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+
+/* ---------------------FOOTER----------------------------*/ 
+
+.footer-copy{
+font-weight: 600;
+font-size: 11px;
+line-height: 1,36;
+letter-spacing: 0.2em;
+color: #9DA4BD;
+}
+
+.footer-link{
+font-weight: 600;
+font-size: 11px;
+line-height: 1,36;
+letter-spacing: 0.2em;
+color: #303030;
+}
+.footer-link:hover,
+.footer-link:focus{
+color: #FF6C00;
 }
