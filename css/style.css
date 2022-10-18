@@ -51,6 +51,13 @@ list-style: none;
 text-decoration: none;
 }
 
+.top-text{
+font-weight: 600;
+font-size: 11px;
+line-height:var(--typical-lh);
+text-transform: uppercase;
+}
+
 /* ---------HEADER------------- */
 
 .header-link,
@@ -99,10 +106,6 @@ color: #FF6C00;
 }
 
 .hero-top-text {
-font-weight: 600;
-font-size: 11px;
-line-height: 1,36;
-text-transform: uppercase;
 color: rgba(157, 164, 189, 0.6);
 }
 
@@ -127,10 +130,6 @@ color: #9da4bd;
 .about-item {
 }
 .about-top-text {
-font-weight: 600;
-font-size: 11px;
-line-height: 1,36;
-text-transform: uppercase;
 color: #303030;
 }
 
@@ -176,10 +175,6 @@ cursor: pointer;
 }
 
 .prices-top-text {
-font-weight: 600;
-font-size: 11px;
-line-height: 1,36;
-text-transform: uppercase;
 color: rgba(157, 164, 189, 0.6);
 }
 
@@ -243,10 +238,6 @@ color: #303030;
 }
 
 .benefits-top-text {
-font-weight: 600;
-font-size: 11px;
-line-height:var(--typical-lh);
-text-transform: uppercase;
 color: #303030;
 }
 
@@ -275,10 +266,6 @@ color: #555555;
 }
 
 .barbers-top-text {
-font-weight: 600;
-font-size: 11px;
-line-height:var(--typical-lh);
-text-transform: uppercase;
 color: #303030;
 }
 
@@ -324,10 +311,10 @@ color:#303030;
 
 /* --------------------GALLERY----------------------------*/ 
 
-.allery-top-text{
+.gallery-top-text{
 font-weight: 600;
 font-size: 11px;
-line-height: 1,36;
+line-height:var(--typical-lh);
 text-transform: uppercase;
 color: #303030;
 }
