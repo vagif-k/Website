@@ -18,6 +18,52 @@
 --main-font:'Raleway', sans-serif;
 }
 
+/*--------- reset --------------*/
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+margin:0 ;
+}
+
+ul, ol {
+margin:0 ;
+padding-left: 0;
+list-style: none;
+}
+
+button {
+cursor: pointer;
+}
+
+address {
+font-style: normal;
+}
+
+a {
+color: currentColor;
+text-decoration: none;
+}
+
+.list{
+list-style: none;
+}
+
+.link{
+text-decoration: none;
+}
+
+.container {
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+outline: 2px solid red;
+margin: 0 auto;
+}
+
 .visually-hidden {
 position: absolute;
 white-space: nowrap;
@@ -31,25 +77,25 @@ clip-path: inset(50%);
 margin: -1px;
 }
 
+img{
+display: block;
+}
+
 body {
 font-family: "Open Sans", sans-serif;
 }
 
 .header{
 background-color: gray;
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 .hero{
-background-color: gray;
+background-color:blue;
 }
 
-.list{
-list-style: none;
-}
 
-.link{
-text-decoration: none;
-}
 
 .top-text{
 font-weight: 600;
@@ -105,8 +151,13 @@ color: #303030;
 color: #FF6C00;
 }
 
+.hero-content{
+padding: 272px 100px 208px 100px;
+}
+
 .hero-top-text {
 color: rgba(157, 164, 189, 0.6);
+margin-bottom: 20px;
 }
 
 .hero-title {
@@ -116,14 +167,21 @@ font-size: 72px;
 line-height: 1, 18;
 letter-spacing: 0.05em;
 color: #ffffff;
+margin-bottom: 20px;
 }
 .hero-bottom-text {
 font-size: 18px;
 line-height: 1, 66;
 letter-spacing: 0.02em;
 color: #9da4bd;
+max-width: 360px; 
 }
 /* --------------------ABOUT------------------------------*/
+
+.about{
+padding-top: 120px;
+padding-bottom: 120px;
+}
 
 .about-list {
 }
@@ -131,6 +189,7 @@ color: #9da4bd;
 }
 .about-top-text {
 color: #303030;
+margin-bottom: 20px;
 }
 
 .about-tetle {
@@ -141,6 +200,7 @@ font-size: 42px;
 line-height: 1,17;
 letter-spacing: 0.05em;
 color: #303030;
+margin-bottom: 20px;
 }
 
 .about-bottom-text {
@@ -148,6 +208,7 @@ font-size: 18px;
 line-height: 1,67;
 letter-spacing: 0.02em;
 color: #555555;
+margin-bottom: 20px;
 }
 
 .about-text {
@@ -155,6 +216,7 @@ font-size: 14px;
 line-height: 1,86;
 letter-spacing: 0.02em;
 color: #555555;
+margin-bottom: 42px;
 }
 
 .about-btn {
@@ -171,11 +233,14 @@ cursor: pointer;
 /* --------------------PRICES----------------------------*/
 
 .prices {
-    background-color:#303030;
+background-color:#303030;
+padding-top: 120px;
+padding-bottom: 120px;
 }
 
 .prices-top-text {
 color: rgba(157, 164, 189, 0.6);
+margin-bottom: 20px;
 }
 
 .prices-title {
@@ -186,6 +251,7 @@ font-size: 42px;
 line-height: 1,17;
 letter-spacing: 0.05em;
 color: #FFFFFF;
+margin-bottom: 74px;
 }
 
 .prices-list {
@@ -200,6 +266,7 @@ font-size: 18px;
 line-height: 1,67;
 letter-spacing: 0.02em;
 color: #9DA4BD;
+margin-bottom: 74px;
 }
 
 .prices-btn {
@@ -210,10 +277,8 @@ line-height: 1,33;
 letter-spacing: 0.09em;
 text-transform: uppercase;
 color: #FFFFFF;
-cursor: pointer;
-}
 
- /* --------------------BENEFITS----------------------------*/ 
+/* --------------------BENEFITS----------------------------*/ 
 
 .benefits {
 }
