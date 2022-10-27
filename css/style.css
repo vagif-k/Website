@@ -86,8 +86,13 @@ text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
     font-family: inherit;
-}
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    background-color: transparent;
+    min-width: 160px;
+    height: 40px;
 
+}
 .btn:hover{
 color: var(--main-btn-color);
 background-color: var(--accent-color);
@@ -130,6 +135,24 @@ body {
     padding-bottom: 32px;
     background-color: gray;
 }
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    margin-right: 131px;
+}
+
+.header-list{
+    display: flex;
+    gap: 30px;
+}
 
 
 
@@ -148,18 +171,32 @@ line-height: 1,33;
 letter-spacing: 0.1em;
 color: #FFFFFF;
 } */
+
+.header-connect{
+    margin-left: auto;
+}
+
 .header-link:hover,
 .header-link:focus{
     color: #FF6C00;
 }
 .header-btn{
 color: #FFFFFF;
+margin-left: 40px;
 }
 /* ---------------HERO----------- */
 
 .hero{
-background-color:blue;
+
 }
+
+.hero-container{
+    display: flex;
+}
+.hero-list{
+    width: 100px;
+}
+
 
 .hero-link{
 font-weight: 600;
@@ -176,6 +213,8 @@ color: #FF6C00;
 
 .hero-content{
 padding: 272px 100px 208px 100px;
+background-color:blue;
+flex-grow: 1;
 }
 
 .hero-top-text {
@@ -201,11 +240,25 @@ max-width: 360px;
 }
 /* --------------------ABOUT------------------------------*/
 
+.about-list{
+    display: flex;
+    gap: 30px;
+}
 
 .about-list {
 }
 .about-item {
 }
+.about-cotainer{
+display: flex;
+gap: 30px;
+}
+
+.about-content{
+    max-width: 470px;
+}
+
+
 .about-top-text {
 color: #303030;
 margin-bottom: 20px;
@@ -265,9 +318,16 @@ color: #FFFFFF;
 margin-bottom: 44px;
 }
 
+.prices-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
 .prices-list {
 border: 1px solid #FFFFFF;
 padding: 30px 20px;
+width: calc((100% - 30px) /2 );
+
 }
 
 
@@ -276,7 +336,15 @@ padding: 30px 20px;
 .list {
 }
 .prices-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
+
+.prices-item:last-child{
+    margin-bottom: 0;
+}
+
 
 .prices-item-text {
 font-size: 18px;
@@ -373,9 +441,22 @@ margin-bottom: 44px;
 }
 
 .barbers-list {
+    display: flex;
+    gap: 30px;
+}
+
+.barbers-soc-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.barbers-soc-item{
+    
 }
 
 .barbers-item {
+width: calc((100% - 60px) / 3);
 }
 
 .barbers-item-content{
@@ -413,6 +494,7 @@ margin-bottom: 30px;
     border-radius: 50%;
     background-color: tomato;
     display: block;
+    margin-bottom: 10px;
 }
 
 /* --------------------GALLERY----------------------------*/
@@ -422,6 +504,12 @@ font-size: 11px;
 line-height:var(--typical-lh);
 text-transform: uppercase;
 color: #303030;
+}
+
+.gallery-list{
+    display: flex;
+    gap: 30px;
+    margin-top: 44px;
 }
 /* --------------------ONLINE----------------------------*/ 
 
