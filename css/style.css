@@ -117,6 +117,16 @@ letter-spacing: 0.05em;
     line-height:var(--typical-lh);
     text-transform: uppercase;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-text::before{
+    content:"" ;
+    width: 60px;
+    height: 1px;
+    background-color:currentColor;
 }
 
 img{
@@ -335,14 +345,21 @@ margin-bottom: 44px;
     justify-content: space-between;
 }
 
+.prices-list:first-child{
+    background: 
+    linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-list:last-child{
+    background: 
+    linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
 .prices-list {
-border: 1px solid #FFFFFF;
+/* border: 1px solid #FFFFFF; */
 padding: 30px 20px;
 width: calc((100% - 30px) /2 );
 
 }
-
-
 
 
 .list {
@@ -535,11 +552,20 @@ margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.barbers-soc-icon{
     fill: #FFFFFF;
 }
+
+/* .barbers-soc-icon{
+    fill: currentColor;
+} */
+
+.barbers-soc-link:hover,
+.barbers-soc-link:focus{
+    background-color: blue;
+    fill: crimson;
+}
+
+
 
 /* --------------------GALLERY----------------------------*/
 .gallery-top-text{
