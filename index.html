@@ -19,7 +19,9 @@
       <div class="container header-container">
         <nav class="header-navigation">
         <a class="header-logo" href="">
-          <img src="./imeges/Logo.svg" alt="site logo" />
+          <svg class="header-logo-icon" width="69" height="55">
+            <use href="./imeges/symbol-defs.svg#icon-Logo"></use>
+          </svg>
         </a>
         <ul class="header-list list">
           <li class="header-item">
@@ -238,7 +240,6 @@
                     href="./imeges/symbol-defs.svg#icon-linkedin"
                     ></use>
                   </svg>
-
                   </a>
                 </li>
               </ul>
@@ -323,33 +324,36 @@
           </ul>
         </div>
       </section>
-      <section class="online">
-        <h2 class="online-title section-title">Online-booking</h2>
-      </section>
-      <section class="contacts">
-        <h2 class="contacts-title section-title">Contacts</h2>
-        <address class="contacts-address">
-          <a class="contacts-address-link link"
-            href=" https://goo.gl/maps/iC1exrMS7y9eNJN79"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            >st. Vasilkivska, 7A <br />
-            Kyiv, 08132
-          </a>
-          <ul class="contacts-list list ">
-            <li class="contacts-item ">
-                <a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11
-
-                </a>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link " href="mailto:barbershop@email.com">barbershop@email.com</a>
-            </li>
-          </ul>
-        </address>
-        <p class="contacts-subtitle">Working hours</p>
-        <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
-      </section>
+<div class="contact-wrap">
+        <div class="container contact-container">
+          <section class="online section">
+            <h2 class="online-title section-title">Online-booking</h2>
+          </section>
+          <section class="contacts section">
+            <h2 class="contacts-title section-title">Contacts</h2>
+            <address class="contacts-address">
+              <a class="contacts-address-link link"
+                href=" https://goo.gl/maps/iC1exrMS7y9eNJN79"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >st. Vasilkivska, 7A <br />
+                Kyiv, 08132
+              </a>
+              <ul class="contacts-list list ">
+                <li class="contacts-item ">
+                    <a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11
+                    </a>
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link " href="mailto:barbershop@email.com">barbershop@email.com</a>
+                </li>
+              </ul>
+            </address>
+            <p class="contacts-subtitle">Working hours</p>
+            <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
+          </section>
+        </div>
+</div>
     </main>
     <footer class="footer">
       <p class="footer-copy">&copy;Copyright 2020</p>

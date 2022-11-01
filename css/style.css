@@ -368,10 +368,19 @@ width: calc((100% - 30px) /2 );
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    align-items: baseline;
+    gap: 12px;
 }
 
 .prices-item:last-child{
     margin-bottom: 0;
+}
+
+.prices-item::after{
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background: rgba(157, 164, 189, 0.12);
 }
 
 
@@ -380,6 +389,10 @@ font-size: 18px;
 line-height: 1,67;
 letter-spacing: 0.02em;
 color: #9DA4BD;
+}
+
+.prices-item-text:last-child{
+    order: 1;
 }
 
 .prices-btn {
@@ -581,10 +594,21 @@ color: #303030;
     gap: 30px;
     margin-top: 44px;
 }
+
+.contact-wrap{
+    background-color: #191C26;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* --------------------ONLINE----------------------------*/ 
 
 .online{
-background-color: #303030;
+/* background-color: #303030; */
+width: calc(50% - 15px);
 }
 .online-title{
 font-family: 'Raleway';
@@ -598,22 +622,35 @@ color:var(--main-title-color);
 /* --------------------CONTACTS----------------------------*/ 
 
 .contacts{
-background-color: #303030;
+/* background-color: #303030; */
+width: calc(50% - 15px);
+padding-left: 100px;
 }
 .contacts-title{
 color: var(--main-title-color);
+margin-bottom: 40px;
 }
+
+.contacts-address{
+    font-style: normal;
+    margin-bottom: 70px;
+}
+
 .contacts-address-link{
 font-weight: 700;
 font-size: 18px;
 line-height:1,67;
 letter-spacing: 0.02em;
 color: #9DA4BD;
+margin-bottom: 20px;
+display: block;
 }
-.contacts-item {
-color: #9DA4BD;
 
+.contacts-item + .contacts-item {
+margin-top: 20px;
 }
+
+
 .contacts-link {
 font-size: 18px;
 line-height: 1,67;
@@ -626,6 +663,7 @@ font-size: 11px;
 line-height: 1,36;
 text-transform: uppercase;
 color: #FFFFFF;
+margin-bottom: 20px;
 }
 .contacts-schedule {
 font-size: 18px;
